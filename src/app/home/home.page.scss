@@ -25,3 +25,31 @@
 #container a {
   text-decoration: none;
 }
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.logo {
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #ff5a00;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+ion-button {
+  background-color: #b52b2b;
+  border-radius: 5px;
+  --background-hover: #d43f3a;
+}
+

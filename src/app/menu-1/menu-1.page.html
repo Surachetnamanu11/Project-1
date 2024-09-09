@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="darkyellow">
+      <img src="/assets/icon/ร้านขาว.png" width="125px"><img src="/assets/icon/Rung.png" width="150px"  slot="end">
+</ion-toolbar>
+</ion-header>
+
+<ion-content color="darkyellow">
+  <ion-card color="pigblood">
+    <ion-card-header slot="end">
+      <ion-card-subtitle>ร้านข้าวแกงบ้านเรือง</ion-card-subtitle>
+    </ion-card-header>
+
+
+    <ion-item *ngFor = "let i of items" color="pigblood">
+      <ion-thumbnail slot="start">
+        <img alt="Error" src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
+      </ion-thumbnail>
+      <ion-label color="darkyellow">
+        <h2>{{i.name}}</h2>
+        <p> {{i.detail}}</p>
+      </ion-label>
+      <ion-note color="darkyellow" slot="end">{{i.price}} บาท</ion-note>
+      <ion-button slot="end" fill="clear">
+        <ion-icon name="add-sharp" color="darkyellow"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-card>
+
+
+    <ion-toolbar color="light" class="under">
+      <ion-title>รวมราคา .... บาท</ion-title>
+    </ion-toolbar>
+</ion-content>
+
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="play-circle"></ion-icon>
+
+    </ion-tab-button>
+    <ion-tab-button tab="radio">
+      <ion-icon name="radio"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="library">
+      <ion-icon name="library"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

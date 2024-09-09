@@ -1,20 +1,12 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" class="ion-padding" color="warning">
+  <div class="container">
+    <img src="/assets/icon/logo.png" alt="โลโก้รุ่งเรือง" class="logo" />
+    <h1>รุ่งเรือง</h1>
+    <p>แอปพลิเคชันสั่งจองอาหารสวัสดิการผู้มีรอย</p>
+    <ion-button expand="block" color="danger" (click)="goTomenu1()">สั่งกับข้าว</ion-button>
+    <ion-button expand="block" color="danger">เจ้าของร้าน</ion-button>
   </div>
 </ion-content>
+
